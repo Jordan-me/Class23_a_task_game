@@ -1,7 +1,7 @@
 package com.example.class23_a_task_game;
 
 public class GameManager {
-    public static final int MIN_SPEED = 500;
+    public static final int MIN_SPEED = 750;
     public static final int MAX_SPEED = 350;
     public static final String MSG_LOST = "Oh Oh! you crashed";
     private final int AMOUNT_OBSTACLE_PER_LEVEL = 10;
@@ -97,4 +97,5 @@ public class GameManager {
         this.currentSpeed = currentSpeed;
         return this;
     }
+
 }

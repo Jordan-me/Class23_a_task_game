@@ -9,12 +9,15 @@ import java.util.Random;
 
 public class ObstacleBoardManager {
     private ObstacleBoardView boardView;
-    private final int COLUMNS_COUNT = 3;
+    private final int COLUMNS_COUNT = 5;
+    private final int COIN_POINT = 3;
     private ArrayList<ArrayList<Boolean>> activateObstacle;
+    private ArrayList<ArrayList<ObstacleType>> activateObstacleTypes;
 
     public ObstacleBoardManager() {
         this.boardView = new ObstacleBoardView();
         this.activateObstacle = new ArrayList<>(COLUMNS_COUNT);
+        this.activateObstacleTypes = new ArrayList<>(COLUMNS_COUNT);
     }
 
     public ObstacleBoardView getBoardView() {
@@ -37,8 +40,10 @@ public class ObstacleBoardManager {
     public ObstacleBoardManager initActivateColumns() {
         for (int i = 0; i < this.boardView.getBoard().size() ; i++) {
             this.activateObstacle.add(new ArrayList<>());
+            this.activateObstacleTypes.add(new ArrayList<>());
             for (int j = 0; j < this.boardView.getBoard().get(i).size(); j++) {
                 this.activateObstacle.get(i).add(false);
+                this.activateObstacleTypes.get(i).add(ObstacleType.ROCK);
             }
         }
         return this;
@@ -69,6 +74,8 @@ public class ObstacleBoardManager {
                     indexFalse.add(i*10+j);
                     if ((i + 1) < this.activateObstacle.size()) {
                         indexTrue.add((i+1)*10+j);
+                        this.activateObstacleTypes.get(i+1).set(j,this.activateObstacleTypes.get(i).get(j));
+//                        this.activateObstacle.get(i+1).set(j, this.activateObstacle.get(i).get(j));
                     }
                 }
 
@@ -83,6 +90,7 @@ public class ObstacleBoardManager {
             int col = index%10;
             int row = index/10;
             this.activateObstacle.get(row).set(col, Boolean.TRUE);
+            this.boardView.changeObstacleView(col,row,this.activateObstacleTypes.get(row).get(col));
             this.boardView.setImageVisible(col, row);
         }
     }
@@ -104,6 +112,16 @@ public class ObstacleBoardManager {
     public void createNewObstacle() {
 //      randomize number 0 to COLUMNS_COUNT
         int randomColumn = new Random().nextInt(COLUMNS_COUNT);
+        ObstacleType obstacleType = ObstacleType.values()[new Random().nextInt(ObstacleType.values().length)];
+//      show this obstacle on row 0 and set activate obstacle true
+        this.activateObstacle.get(0).set(randomColumn,Boolean.TRUE);
+        this.activateObstacleTypes.get(0).set(randomColumn,obstacleType);
+        this.boardView.changeObstacleView(randomColumn,0,obstacleType);
+        this.boardView.setImageVisible(randomColumn,0);
+    }
+    public void createNewObstacle1() {
+//      randomize number 0 to COLUMNS_COUNT
+        int randomColumn = new Random().nextInt(COLUMNS_COUNT);
 //      show this obstacle on row 0 and set activate obstacle true
         this.activateObstacle.get(0).set(randomColumn,Boolean.TRUE);
         this.boardView.setImageVisible(randomColumn,0);
@@ -113,9 +131,18 @@ public class ObstacleBoardManager {
         int count = 0;
         for (int i = 0; i < COLUMNS_COUNT; i++) {
             if(this.activateObstacle.get(this.activateObstacle.size()-1).get(i) && i != exceptIndex){
-                count++;
+                if(this.activateObstacleTypes.get(this.activateObstacle.size()-1).get(i) != ObstacleType.COIN)
+                    count++;
             }
         }
         return count;
+    }
+
+    public boolean isObstacleHitOnCoin(int i) {
+        return this.activateObstacleTypes.get(this.activateObstacle.size()-1).get(i) == ObstacleType.COIN;
+    }
+
+    public int getCOIN_POINT() {
+        return COIN_POINT;
     }
 }

@@ -24,6 +24,15 @@ public class ObstacleBoardView {
         this.board.add(new ArrayList<ImageView>());
         return this;
     }
+    public ObstacleBoardView changeObstacleView(int colIndex, int rowIndex, ObstacleType obstacleType) {
+        if(obstacleType == ObstacleType.COIN){
+            this.board.get(rowIndex).get(colIndex).setImageResource(R.drawable.img_coin);
+        }else if(obstacleType == ObstacleType.ROCK){
+            this.board.get(rowIndex).get(colIndex).setImageResource(R.drawable.img_rock);
+        }
+        return this;
+    }
+
     public ObstacleBoardView addObstacleImage(ImageView obstacleImage, int rowIndex) {
         this.board.get(rowIndex).add(obstacleImage);
         return this;

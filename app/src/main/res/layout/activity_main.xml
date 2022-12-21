@@ -52,7 +52,20 @@
                 android:layout_margin="10dp"
                 android:layout_weight="2"
                 app:srcCompat="@drawable/img_rock" />
-
+            <ImageView
+                android:id="@+id/main_IMG_rock_r0_c3"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+            <ImageView
+                android:id="@+id/main_IMG_rock_r0_c4"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
         <!--ROW 1 ON ROCK MATRIX-->
@@ -86,6 +99,22 @@
                 android:layout_margin="10dp"
                 android:layout_weight="2"
                 app:srcCompat="@drawable/img_rock" />
+
+            <ImageView
+                android:id="@+id/main_IMG_rock_r1_c3"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+
+            <ImageView
+                android:id="@+id/main_IMG_rock_r1_c4"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
         </androidx.appcompat.widget.LinearLayoutCompat>
         <!--ROW 2 ON ROCK MATRIX-->
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -112,6 +141,20 @@
 
             <ImageView
                 android:id="@+id/main_IMG_rock_r2_c2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+            <ImageView
+                android:id="@+id/main_IMG_rock_r2_c3"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+            <ImageView
+                android:id="@+id/main_IMG_rock_r2_c4"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
                 android:layout_margin="10dp"
@@ -152,6 +195,22 @@
                 android:layout_weight="2"
 
                 app:srcCompat="@drawable/img_rock" />
+
+            <ImageView
+                android:id="@+id/main_IMG_rock_r3_c3"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+
+            <ImageView
+                android:id="@+id/main_IMG_rock_r3_c4"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
         </androidx.appcompat.widget.LinearLayoutCompat>
         <!--ROW 4 ON ROCK MATRIX-->
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -186,8 +245,22 @@
                 android:layout_margin="10dp"
                 android:layout_weight="2"
                 app:srcCompat="@drawable/img_rock" />
+            <ImageView
+                android:id="@+id/main_IMG_rock_r4_c3"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+            <ImageView
+                android:id="@+id/main_IMG_rock_r4_c4"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
         </androidx.appcompat.widget.LinearLayoutCompat>
-        <!--ROW OF SPACESHIP-->
+        <!--ROW 5 ON ROCK MATRIX-->
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -195,10 +268,112 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/main_IMG_rock_r5_c0"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+
+            <ImageView
+                android:id="@+id/main_IMG_rock_r5_c1"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+
+            <ImageView
+                android:id="@+id/main_IMG_rock_r5_c2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+            <ImageView
+                android:id="@+id/main_IMG_rock_r5_c3"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+            <ImageView
+                android:id="@+id/main_IMG_rock_r5_c4"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!--ROW 6 ON ROCK MATRIX-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/main_IMG_rock_r6_c0"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+
+            <ImageView
+                android:id="@+id/main_IMG_rock_r6_c1"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+
+            <ImageView
+                android:id="@+id/main_IMG_rock_r6_c2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+            <ImageView
+                android:id="@+id/main_IMG_rock_r6_c3"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+            <ImageView
+                android:id="@+id/main_IMG_rock_r6_c4"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_rock" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!--ROW OF SPACESHIP-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:orientation="horizontal">
+
+            <ImageView
                 android:id="@+id/main_IMG_rocket_left"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_spaceship" />
+            <ImageView
+                android:id="@+id/main_IMG_rocket_left_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="2"
                 app:srcCompat="@drawable/img_spaceship" />
 
@@ -206,7 +381,6 @@
                 android:id="@+id/main_IMG_rocket_middle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:layout_weight="2"
                 app:srcCompat="@drawable/img_spaceship" />
             <!--Obstacle-->
@@ -214,9 +388,16 @@
                 android:id="@+id/main_IMG_rocket_right"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:layout_weight="2"
                 app:srcCompat="@drawable/img_spaceship" />
+            <ImageView
+                android:id="@+id/main_IMG_rocket_right_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_spaceship" />
+
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -327,6 +508,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:backgroundTint="#4CAF50"
+                android:visibility="invisible"
                 app:icon="@drawable/ic_left_arrow"
                 app:iconTint="@color/white" />
 
@@ -343,6 +525,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:backgroundTint="#4CAF50"
+                android:visibility="invisible"
                 app:icon="@drawable/ic_right_arrow"
                 app:iconTint="@color/white" />
         </RelativeLayout>

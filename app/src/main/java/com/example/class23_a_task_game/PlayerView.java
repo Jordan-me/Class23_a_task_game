@@ -31,12 +31,14 @@ public class PlayerView {
         return this;
     }
     public PlayerView showImage(int index) {
-        this.playerLayout.get(index).setVisibility(View.VISIBLE);
+        if (index >= 0)
+            this.playerLayout.get(index).setVisibility(View.VISIBLE);
         return this;
     }
 
     public PlayerView hideImage(int index) {
-        this.playerLayout.get(index).setVisibility(View.INVISIBLE);
+        if (index >= 0)
+            this.playerLayout.get(index).setVisibility(View.INVISIBLE);
         return this;
     }
 }
